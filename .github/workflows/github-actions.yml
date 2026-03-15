@@ -28,3 +28,7 @@ jobs:
           submodules: recursive
 
       - name: Make scripts executable
+        run: chmod +x *.sh
+
+      - name: Run full test
+        run: ./full-test.sh
